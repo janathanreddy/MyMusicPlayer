@@ -24,7 +24,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         songs.append(Song(Name: "AalaiyamDevan", AlbumName: "Christian", ArtistName: "Artist 1", ImageName: "mp3image1", TrackName: "AalaiyamDevan"))
         songs.append(Song(Name: "AandavaPrasannam", AlbumName: "Christian", ArtistName: "Artist 2", ImageName: "mp3image2", TrackName: "AandavaPrasannam"))
         songs.append(Song(Name: "AmenAlleluyaAaseervadham", AlbumName: "Christian", ArtistName: "Artist 3", ImageName: "mp3image3", TrackName: "AmenAlleluyaAaseervadham"))
-        
+        songs.append(Song(Name: "AalaiyamDevan", AlbumName: "Christian", ArtistName: "Artist 4", ImageName: "mp3image4", TrackName: "TamilJesusSongs-AalaiyamDevan"))
+        songs.append(Song(Name: "AandavaPrasannam", AlbumName: "Christian", ArtistName: "Artist 5", ImageName: "mp3image5", TrackName: "TamilJesusSongs-AandavaPrasannam"))
+        songs.append(Song(Name: "AathumamaeEn", AlbumName: "Christian", ArtistName: "Artist 6", ImageName: "mp3image6", TrackName: "TamilJesusSongs-AathumamaeEn"))
+        songs.append(Song(Name: "AbrahamDevan", AlbumName: "Christian", ArtistName: "Artist 7", ImageName: "mp3image7", TrackName: "TamilJesusSongs-AalaiyamDevan"))
+        songs.append(Song(Name: "AlelooyaGeedham", AlbumName: "Christian", ArtistName: "Artist 8", ImageName: "mp3image8", TrackName: "TamilJesusSongs-AlelooyaGeedham"))
+        songs.append(Song(Name: "AnandhamaeJayaJaya", AlbumName: "Christian", ArtistName: "Artist 9", ImageName: "mp3image9", TrackName: "TamilJesusSongs-AnandhamaeJayaJaya"))
+        songs.append(Song(Name: "EnDevanae", AlbumName: "Christian", ArtistName: "Artist 10", ImageName: "mp3image4", TrackName: "TamilJesusSongs-EnDevanae"))
+        songs.append(Song(Name: "Illaram", AlbumName: "Christian", ArtistName: "Artist 11", ImageName: "mp3image2", TrackName: "TamilJesusSongs-Illaram"))
+
+
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count

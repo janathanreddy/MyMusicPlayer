@@ -11,6 +11,14 @@
 		211C217B259A06AA00F9CBE4 /* AandavaPrasannam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */; };
 		211C217C259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */; };
 		211C2184259A128800F9CBE4 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C2183259A128800F9CBE4 /* MusicPlayerViewController.swift */; };
+		211C2190259A561E00F9CBE4 /* TamilJesusSongs-AandavaPrasannam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2188259A561A00F9CBE4 /* TamilJesusSongs-AandavaPrasannam.mp3 */; };
+		211C2191259A561E00F9CBE4 /* TamilJesusSongs-AathumamaeEn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2189259A561B00F9CBE4 /* TamilJesusSongs-AathumamaeEn.mp3 */; };
+		211C2192259A561E00F9CBE4 /* TamilJesusSongs-AnandhamaeJayaJaya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218A259A561B00F9CBE4 /* TamilJesusSongs-AnandhamaeJayaJaya.mp3 */; };
+		211C2193259A561E00F9CBE4 /* TamilJesusSongs-AalaiyamDevan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218B259A561B00F9CBE4 /* TamilJesusSongs-AalaiyamDevan.mp3 */; };
+		211C2194259A561E00F9CBE4 /* TamilJesusSongs-AbrahamDevan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218C259A561C00F9CBE4 /* TamilJesusSongs-AbrahamDevan.mp3 */; };
+		211C2195259A561E00F9CBE4 /* TamilJesusSongs-Illaram.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218D259A561D00F9CBE4 /* TamilJesusSongs-Illaram.mp3 */; };
+		211C2196259A561E00F9CBE4 /* TamilJesusSongs-AlelooyaGeedham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218E259A561D00F9CBE4 /* TamilJesusSongs-AlelooyaGeedham.mp3 */; };
+		211C2197259A561E00F9CBE4 /* TamilJesusSongs-EnDevanae.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C218F259A561E00F9CBE4 /* TamilJesusSongs-EnDevanae.mp3 */; };
 		21627EED2599E8D7006B391D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EEC2599E8D7006B391D /* AppDelegate.swift */; };
 		21627EEF2599E8D7006B391D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EEE2599E8D7006B391D /* SceneDelegate.swift */; };
 		21627EF12599E8D7006B391D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EF02599E8D7006B391D /* ViewController.swift */; };
@@ -46,6 +54,14 @@
 		211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AandavaPrasannam.mp3; sourceTree = "<group>"; };
 		211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AmenAlleluyaAaseervadham.mp3; sourceTree = "<group>"; };
 		211C2183259A128800F9CBE4 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		211C2188259A561A00F9CBE4 /* TamilJesusSongs-AandavaPrasannam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AandavaPrasannam.mp3"; sourceTree = "<group>"; };
+		211C2189259A561B00F9CBE4 /* TamilJesusSongs-AathumamaeEn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AathumamaeEn.mp3"; sourceTree = "<group>"; };
+		211C218A259A561B00F9CBE4 /* TamilJesusSongs-AnandhamaeJayaJaya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AnandhamaeJayaJaya.mp3"; sourceTree = "<group>"; };
+		211C218B259A561B00F9CBE4 /* TamilJesusSongs-AalaiyamDevan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AalaiyamDevan.mp3"; sourceTree = "<group>"; };
+		211C218C259A561C00F9CBE4 /* TamilJesusSongs-AbrahamDevan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AbrahamDevan.mp3"; sourceTree = "<group>"; };
+		211C218D259A561D00F9CBE4 /* TamilJesusSongs-Illaram.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-Illaram.mp3"; sourceTree = "<group>"; };
+		211C218E259A561D00F9CBE4 /* TamilJesusSongs-AlelooyaGeedham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-AlelooyaGeedham.mp3"; sourceTree = "<group>"; };
+		211C218F259A561E00F9CBE4 /* TamilJesusSongs-EnDevanae.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TamilJesusSongs-EnDevanae.mp3"; sourceTree = "<group>"; };
 		21627EE92599E8D7006B391D /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21627EEC2599E8D7006B391D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21627EEE2599E8D7006B391D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +132,14 @@
 				211C2177259A06A900F9CBE4 /* AalaiyamDevan.mp3 */,
 				211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */,
 				211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */,
+				211C218B259A561B00F9CBE4 /* TamilJesusSongs-AalaiyamDevan.mp3 */,
+				211C2188259A561A00F9CBE4 /* TamilJesusSongs-AandavaPrasannam.mp3 */,
+				211C2189259A561B00F9CBE4 /* TamilJesusSongs-AathumamaeEn.mp3 */,
+				211C218C259A561C00F9CBE4 /* TamilJesusSongs-AbrahamDevan.mp3 */,
+				211C218E259A561D00F9CBE4 /* TamilJesusSongs-AlelooyaGeedham.mp3 */,
+				211C218A259A561B00F9CBE4 /* TamilJesusSongs-AnandhamaeJayaJaya.mp3 */,
+				211C218F259A561E00F9CBE4 /* TamilJesusSongs-EnDevanae.mp3 */,
+				211C218D259A561D00F9CBE4 /* TamilJesusSongs-Illaram.mp3 */,
 				21627EEC2599E8D7006B391D /* AppDelegate.swift */,
 				21627EEE2599E8D7006B391D /* SceneDelegate.swift */,
 				21627EF02599E8D7006B391D /* ViewController.swift */,
@@ -252,13 +276,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211C2196259A561E00F9CBE4 /* TamilJesusSongs-AlelooyaGeedham.mp3 in Resources */,
+				211C2194259A561E00F9CBE4 /* TamilJesusSongs-AbrahamDevan.mp3 in Resources */,
+				211C2192259A561E00F9CBE4 /* TamilJesusSongs-AnandhamaeJayaJaya.mp3 in Resources */,
 				21627EF92599E8D9006B391D /* LaunchScreen.storyboard in Resources */,
+				211C2195259A561E00F9CBE4 /* TamilJesusSongs-Illaram.mp3 in Resources */,
 				21627EF62599E8D9006B391D /* Assets.xcassets in Resources */,
 				211C217C259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 in Resources */,
 				21627EF42599E8D7006B391D /* Main.storyboard in Resources */,
 				211C217A259A06AA00F9CBE4 /* AalaiyamDevan.mp3 in Resources */,
+				211C2191259A561E00F9CBE4 /* TamilJesusSongs-AathumamaeEn.mp3 in Resources */,
+				211C2197259A561E00F9CBE4 /* TamilJesusSongs-EnDevanae.mp3 in Resources */,
 				211C217B259A06AA00F9CBE4 /* AandavaPrasannam.mp3 in Resources */,
 				21627F272599F705006B391D /* MusicTableViewCell.xib in Resources */,
+				211C2193259A561E00F9CBE4 /* TamilJesusSongs-AalaiyamDevan.mp3 in Resources */,
+				211C2190259A561E00F9CBE4 /* TamilJesusSongs-AandavaPrasannam.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

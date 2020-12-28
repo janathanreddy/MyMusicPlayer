@@ -77,7 +77,7 @@ class MusicPlayerViewController: UIViewController {
             print("Error Occur")
         }
         MusicImageView.frame = CGRect(x: 10,
-                                      y: 10,
+                                      y: 20,
                                       width: PlaceHold.frame.size.width-20,
                                       height: PlaceHold.frame.size.width-20)
         MusicImageView.image = UIImage(named: Song.ImageName)
@@ -96,9 +96,12 @@ class MusicPlayerViewController: UIViewController {
                                       y: MusicImageView.frame.size.height + 10 + 140,
                                       width: PlaceHold.frame.size.width-20,
                                       height: 70)
-        
+        titleNameLabel.font = UIFont(name: "Helvetica-Bold", size: 18)
         titleNameLabel.text = Song.Name
+        artistNameLabel.font = UIFont(name: "Helvetica", size: 16)
         artistNameLabel.text = Song.ArtistName
+        albumNameLabel.font = UIFont(name: "Helvetica", size: 14)
+        albumNameLabel.alpha = 0.7
         albumNameLabel.text = Song.AlbumName
         
         PlaceHold.addSubview(titleNameLabel)
@@ -106,7 +109,7 @@ class MusicPlayerViewController: UIViewController {
         PlaceHold.addSubview(albumNameLabel)
         
         
-        let yPosition = artistNameLabel.frame.origin.y + 70 + 20
+        let yPosition = artistNameLabel.frame.origin.y + 140 + 40
         let Size:CGFloat = 40
         
         PlayerPauseButton.frame = CGRect(x: (PlaceHold.frame.size.width - Size) / 2.0, y: yPosition, width: Size, height: Size)
@@ -146,18 +149,39 @@ class MusicPlayerViewController: UIViewController {
         if player?.isPlaying == true{
             player?.pause()
             PlayerPauseButton.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+            UIView.animate(withDuration: 0.2, animations: {
+                self.MusicImageView.frame = CGRect(x: 30, y: 30, width: self.PlaceHold.frame.size.width - 60, height: self.PlaceHold.frame.size.width - 60)
+            })
 
         }else{
             player?.play()
             PlayerPauseButton.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
-
+            UIView.animate(withDuration: 0.2, animations: {
+                self.MusicImageView.frame = CGRect(x: 10, y: 10, width: self.PlaceHold.frame.size.width - 20, height: self.PlaceHold.frame.size.width - 20)
+            })
         }
     }
     
     @objc func DidNextButtonTapped(){
+        if Position <  (songs.count - 1){
+            Position = Position + 1
+            player?.stop()
+            for subView in PlaceHold.subviews{
+                subView.removeFromSuperview()
+            }
+            PlayerPlayConfig()
+        }
     }
     
     @objc func DidBackButtonTapped(){
+        if Position > 0{
+            Position = Position - 1
+            player?.stop()
+            for subView in PlaceHold.subviews{
+                subView.removeFromSuperview()
+            }
+            PlayerPlayConfig()
+        }
     }
     
     @objc func MusicSlider(_ Slider:UISlider){
