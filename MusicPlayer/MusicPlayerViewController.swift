@@ -15,7 +15,10 @@ class MusicPlayerViewController: UIViewController {
     var Position:Int = 0
     var songs:[Song] =  []
     var player:AVAudioPlayer?
-    
+    let PlayerPauseButton = UIButton()
+    let NextButton = UIButton()
+    let BackButton = UIButton()
+
     private let MusicImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
@@ -67,6 +70,7 @@ class MusicPlayerViewController: UIViewController {
             guard player == player else {
                 return
             }
+            player?.volume = 0.5
             player!.play()
         }
         catch{
@@ -78,6 +82,88 @@ class MusicPlayerViewController: UIViewController {
                                       height: PlaceHold.frame.size.width-20)
         MusicImageView.image = UIImage(named: Song.ImageName)
         PlaceHold.addSubview(MusicImageView)
+        titleNameLabel.frame = CGRect(x: 10,
+                                      y: MusicImageView.frame.size.height + 10 ,
+                                      width: PlaceHold.frame.size.width-20,
+                                      height: 70)
+        
+        artistNameLabel.frame = CGRect(x: 10,
+                                      y:  MusicImageView.frame.size.height + 10 + 70,
+                                      width: PlaceHold.frame.size.width-20,
+                                      height: 70)
+        
+        albumNameLabel.frame = CGRect(x: 10,
+                                      y: MusicImageView.frame.size.height + 10 + 140,
+                                      width: PlaceHold.frame.size.width-20,
+                                      height: 70)
+        
+        titleNameLabel.text = Song.Name
+        artistNameLabel.text = Song.ArtistName
+        albumNameLabel.text = Song.AlbumName
+        
+        PlaceHold.addSubview(titleNameLabel)
+        PlaceHold.addSubview(artistNameLabel)
+        PlaceHold.addSubview(albumNameLabel)
+        
+        
+        let yPosition = artistNameLabel.frame.origin.y + 70 + 20
+        let Size:CGFloat = 40
+        
+        PlayerPauseButton.frame = CGRect(x: (PlaceHold.frame.size.width - Size) / 2.0, y: yPosition, width: Size, height: Size)
+        NextButton.frame = CGRect(x: PlaceHold.frame.size.width - Size - 20, y: yPosition, width: Size, height: Size)
+        BackButton.frame = CGRect(x: 20, y: yPosition, width: Size, height: Size)
+
+        
+        PlayerPauseButton.addTarget(self, action: #selector(DidPlayPauseButtonTapped), for: .touchUpInside)
+        NextButton.addTarget(self, action: #selector(DidNextButtonTapped), for: .touchUpInside)
+        BackButton.addTarget(self, action: #selector(DidBackButtonTapped), for: .touchUpInside)
+
+        
+        PlayerPauseButton.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+        NextButton.setBackgroundImage(UIImage(systemName: "forward"), for: .normal)
+        BackButton.setBackgroundImage(UIImage(systemName: "backward"), for: .normal)
+
+        PlayerPauseButton.tintColor = .black
+        NextButton.tintColor = .black
+        BackButton.tintColor = .black
+        
+        PlaceHold.addSubview(PlayerPauseButton)
+        PlaceHold.addSubview(NextButton)
+        PlaceHold.addSubview(BackButton)
+
+
+        let Slider = UISlider(frame: CGRect(x: 20,
+                                            y: PlaceHold.frame.size.height-60,
+                                            width: PlaceHold.frame.size.width-40,
+                                            height: 50))
+        Slider.value = 0.5
+        Slider.addTarget(self, action: #selector(MusicSlider(_:)), for: .valueChanged)
+        PlaceHold.addSubview(Slider)
+
+    }
+    
+    @objc func DidPlayPauseButtonTapped(){
+        if player?.isPlaying == true{
+            player?.pause()
+            PlayerPauseButton.setBackgroundImage(UIImage(systemName: "play"), for: .normal)
+
+        }else{
+            player?.play()
+            PlayerPauseButton.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+
+        }
+    }
+    
+    @objc func DidNextButtonTapped(){
+    }
+    
+    @objc func DidBackButtonTapped(){
+    }
+    
+    @objc func MusicSlider(_ Slider:UISlider){
+        let value = Slider.value
+        player?.volume = value
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
