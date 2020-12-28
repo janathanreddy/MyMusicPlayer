@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211C217A259A06AA00F9CBE4 /* AalaiyamDevan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2177259A06A900F9CBE4 /* AalaiyamDevan.mp3 */; };
+		211C217B259A06AA00F9CBE4 /* AandavaPrasannam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */; };
+		211C217C259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */; };
+		211C2184259A128800F9CBE4 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C2183259A128800F9CBE4 /* MusicPlayerViewController.swift */; };
 		21627EED2599E8D7006B391D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EEC2599E8D7006B391D /* AppDelegate.swift */; };
 		21627EEF2599E8D7006B391D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EEE2599E8D7006B391D /* SceneDelegate.swift */; };
 		21627EF12599E8D7006B391D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627EF02599E8D7006B391D /* ViewController.swift */; };
@@ -15,6 +19,9 @@
 		21627EF92599E8D9006B391D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21627EF72599E8D9006B391D /* LaunchScreen.storyboard */; };
 		21627F042599E8DA006B391D /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627F032599E8DA006B391D /* MusicPlayerTests.swift */; };
 		21627F0F2599E8DA006B391D /* MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627F0E2599E8DA006B391D /* MusicPlayerUITests.swift */; };
+		21627F202599F646006B391D /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627F1F2599F646006B391D /* Songs.swift */; };
+		21627F262599F705006B391D /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21627F242599F705006B391D /* MusicTableViewCell.swift */; };
+		21627F272599F705006B391D /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21627F252599F705006B391D /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211C2177259A06A900F9CBE4 /* AalaiyamDevan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AalaiyamDevan.mp3; sourceTree = "<group>"; };
+		211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AandavaPrasannam.mp3; sourceTree = "<group>"; };
+		211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AmenAlleluyaAaseervadham.mp3; sourceTree = "<group>"; };
+		211C2183259A128800F9CBE4 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		21627EE92599E8D7006B391D /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21627EEC2599E8D7006B391D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21627EEE2599E8D7006B391D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		21627F0A2599E8DA006B391D /* MusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21627F0E2599E8DA006B391D /* MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerUITests.swift; sourceTree = "<group>"; };
 		21627F102599E8DA006B391D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21627F1F2599F646006B391D /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		21627F242599F705006B391D /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		21627F252599F705006B391D /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,9 @@
 		21627EEB2599E8D7006B391D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				211C2177259A06A900F9CBE4 /* AalaiyamDevan.mp3 */,
+				211C2178259A06AA00F9CBE4 /* AandavaPrasannam.mp3 */,
+				211C2179259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 */,
 				21627EEC2599E8D7006B391D /* AppDelegate.swift */,
 				21627EEE2599E8D7006B391D /* SceneDelegate.swift */,
 				21627EF02599E8D7006B391D /* ViewController.swift */,
@@ -106,6 +123,10 @@
 				21627EF52599E8D9006B391D /* Assets.xcassets */,
 				21627EF72599E8D9006B391D /* LaunchScreen.storyboard */,
 				21627EFA2599E8D9006B391D /* Info.plist */,
+				21627F1F2599F646006B391D /* Songs.swift */,
+				21627F242599F705006B391D /* MusicTableViewCell.swift */,
+				21627F252599F705006B391D /* MusicTableViewCell.xib */,
+				211C2183259A128800F9CBE4 /* MusicPlayerViewController.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -233,7 +254,11 @@
 			files = (
 				21627EF92599E8D9006B391D /* LaunchScreen.storyboard in Resources */,
 				21627EF62599E8D9006B391D /* Assets.xcassets in Resources */,
+				211C217C259A06AA00F9CBE4 /* AmenAlleluyaAaseervadham.mp3 in Resources */,
 				21627EF42599E8D7006B391D /* Main.storyboard in Resources */,
+				211C217A259A06AA00F9CBE4 /* AalaiyamDevan.mp3 in Resources */,
+				211C217B259A06AA00F9CBE4 /* AandavaPrasannam.mp3 in Resources */,
+				21627F272599F705006B391D /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21627F262599F705006B391D /* MusicTableViewCell.swift in Sources */,
+				211C2184259A128800F9CBE4 /* MusicPlayerViewController.swift in Sources */,
+				21627F202599F646006B391D /* Songs.swift in Sources */,
 				21627EF12599E8D7006B391D /* ViewController.swift in Sources */,
 				21627EED2599E8D7006B391D /* AppDelegate.swift in Sources */,
 				21627EEF2599E8D7006B391D /* SceneDelegate.swift in Sources */,
